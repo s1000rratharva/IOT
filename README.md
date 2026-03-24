@@ -70,7 +70,7 @@ smart-irrigation/
 │   ├── package.json
 │   └── server.js                    # Express app + WebSocket server
 │
-└── esp32/                           # Arduino Uno R4 WiFi firmware
+└── arduino/                         # Arduino Uno R4 WiFi firmware
     └── irrigation/
         └── irrigation.ino           # Main Arduino sketch
 ```
