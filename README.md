@@ -94,9 +94,6 @@ VITE_API_URL=http://localhost:5000
 VITE_WS_URL=ws://localhost:5000
 VITE_OPENWEATHER_API_KEY=your_openweathermap_api_key
 ```
-
-> ⚠️ Never commit `.env` files. Both are listed in `.gitignore`.
-
 ---
 
 ## 🚀 Local Development
@@ -203,35 +200,6 @@ const char SERVER_HOST[] = "your-backend.onrender.com";
 const int  SERVER_PORT   = 443;
 const char PLANT_TYPE[]  = "Tomato";
 ```
-
----
-
-## ☁️ Deployment
-
-### Frontend → Vercel
-
-1. Push repo to GitHub
-2. Import project on [vercel.com](https://vercel.com)
-3. Set environment variables in Vercel dashboard:
-   - `VITE_API_URL` → your Render backend URL
-   - `VITE_WS_URL` → `wss://your-backend.onrender.com`
-   - `VITE_OPENWEATHER_API_KEY` → your OWM key
-4. Deploy — `vercel.json` handles SPA routing automatically
-
-### Backend → Render
-
-1. Create a new **Web Service** on [render.com](https://render.com)
-2. Connect your GitHub repo, set root directory to `backend`
-3. Build command: `npm install`
-4. Start command: `npm start`
-5. Add environment variables: `MONGO_URI`, `JWT_SECRET`, `PORT`
-
-### Database → MongoDB Atlas
-
-1. Create free cluster at [mongodb.com/atlas](https://mongodb.com/atlas)
-2. Database Access → add user with read/write permissions
-3. Network Access → add `0.0.0.0/0`
-4. Connect → Drivers → copy connection string into `MONGO_URI`
 
 ---
 
