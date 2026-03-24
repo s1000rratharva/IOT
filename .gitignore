@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment / credentials — NEVER commit these
+.env
+.env.local
+.env.production
+.env.development
+
+# Frontend build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
